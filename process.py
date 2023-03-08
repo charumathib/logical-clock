@@ -61,8 +61,9 @@ def process_messages(pid: int, sleepDuration: float):
                 print(f"[{pid}] can't connect to {process} - terminating process")
                 os.kill(os.getppid(), signal.SIGKILL)
 
-    # open log file (overwriting if one already exists)
+    # open log file (overwriting if one already exists), with LOG_NAME suffix
     with open(f"logs/process{pid}{LOG_NAME}.txt", "w") as logFile:
+        # mark down the number of ticks per second for this process
         logFile.write(f"ticks per second: {1/sleepDuration}\n")
 
         while True:
@@ -76,6 +77,7 @@ def process_messages(pid: int, sleepDuration: float):
                 message = messageQueue[pid].pop(0)
                 # logical clock IR2, then IR1
                 clock = max(message, clock) + 1
+                print(f"[{pid}] received message, updated clock value to {clock}")
                 logFile.write(f"[MESSAGE RECEIVED] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Queue Length - {len(messageQueue[pid])} | Clock Time - {clock}\n")
                 # the operation was reading the message, time to sleep again after flushing
                 logFile.flush()
@@ -206,6 +208,7 @@ def init_process(pid: int):
     threads.append(processor)
 
 if __name__ == "__main__":
+    # optionally specify a suffix for the log file; the log name will be process<pid><LOG_NAME>.txt
     if len(sys.argv) >= 2:
         LOG_NAME = str(sys.argv[1])
     
