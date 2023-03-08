@@ -16,9 +16,9 @@ LOG_NAME = "LOG"
 
 # change these constants to try different variants, e.g. differences in internal tick rates/probability of internal events
 TICK_RANGE = [1, 6]
-FIXED_TICKS = True
+FIXED_TICKS = False
 TICKS = [1, 5, 6]
-INTERNAL_EVENT_CAP = 25
+INTERNAL_EVENT_CAP = 10
 
 # ports for each process' server
 ports = {0: 21522, 1: 21523, 2: 21524}
