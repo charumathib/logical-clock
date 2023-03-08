@@ -1,0 +1,9 @@
+ticks per second: 1.0
+[MESSAGE(S) SENT] | Global Time - 01:32:24.332061 | Receiver(s) - [2] | Clock Time - 2
+[MESSAGE(S) SENT] | Global Time - 01:32:25.334450 | Receiver(s) - [2] | Clock Time - 3
+[MESSAGE RECEIVED] | Global Time - 01:32:26.339116 | Queue Length - 0 | Clock Time - 9
+[INTERNAL] | Global Time - 01:32:27.343787 | No Messages Sent | Clock Time - 10
+[INTERNAL] | Global Time - 01:32:28.345680 | No Messages Sent | Clock Time - 11
+[MESSAGE(S) SENT] | Global Time - 01:32:29.348163 | Receiver(s) - [0] | Clock Time - 12
+[INTERNAL] | Global Time - 01:32:30.354311 | No Messages Sent | Clock Time - 13
+[MESSAGE RECEIVED] | Global Time - 01:32:31.360847 | Queue Length - 0 | Clock Time - 32

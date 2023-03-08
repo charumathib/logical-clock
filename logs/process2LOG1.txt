@@ -1,0 +1,336 @@
+ticks per second: 4.0
+[MESSAGE RECEIVED] | Global Time - 01:20:34.217539 | Queue Length - 0 | Clock Time - 2
+[MESSAGE RECEIVED] | Global Time - 01:20:34.469541 | Queue Length - 0 | Clock Time - 3
+[INTERNAL] | Global Time - 01:20:34.723409 | No Messages Sent | Clock Time - 4
+[INTERNAL] | Global Time - 01:20:34.975078 | No Messages Sent | Clock Time - 5
+[INTERNAL] | Global Time - 01:20:35.231697 | No Messages Sent | Clock Time - 6
+[INTERNAL] | Global Time - 01:20:35.486957 | No Messages Sent | Clock Time - 7
+[MESSAGE RECEIVED] | Global Time - 01:20:35.743374 | Queue Length - 0 | Clock Time - 9
+[MESSAGE RECEIVED] | Global Time - 01:20:35.999329 | Queue Length - 0 | Clock Time - 10
+[MESSAGE RECEIVED] | Global Time - 01:20:36.254958 | Queue Length - 1 | Clock Time - 12
+[MESSAGE RECEIVED] | Global Time - 01:20:36.509231 | Queue Length - 0 | Clock Time - 13
+[INTERNAL] | Global Time - 01:20:36.763219 | No Messages Sent | Clock Time - 14
+[INTERNAL] | Global Time - 01:20:37.019935 | No Messages Sent | Clock Time - 15
+[INTERNAL] | Global Time - 01:20:37.275719 | No Messages Sent | Clock Time - 16
+[MESSAGE RECEIVED] | Global Time - 01:20:37.529735 | Queue Length - 0 | Clock Time - 18
+[MESSAGE(S) SENT] | Global Time - 01:20:37.785301 | Receiver(s) - [1] | Clock Time - 19
+[MESSAGE(S) SENT] | Global Time - 01:20:38.042108 | Receiver(s) - [1] | Clock Time - 20
+[MESSAGE RECEIVED] | Global Time - 01:20:38.295869 | Queue Length - 0 | Clock Time - 22
+[MESSAGE RECEIVED] | Global Time - 01:20:38.548457 | Queue Length - 0 | Clock Time - 23
+[MESSAGE(S) SENT] | Global Time - 01:20:38.805562 | Receiver(s) - [0] | Clock Time - 24
+[MESSAGE(S) SENT] | Global Time - 01:20:39.062200 | Receiver(s) - [0] | Clock Time - 25
+[MESSAGE RECEIVED] | Global Time - 01:20:39.313656 | Queue Length - 0 | Clock Time - 26
+[INTERNAL] | Global Time - 01:20:39.568465 | No Messages Sent | Clock Time - 27
+[MESSAGE(S) SENT] | Global Time - 01:20:39.820773 | Receiver(s) - [0] | Clock Time - 28
+[MESSAGE(S) SENT] | Global Time - 01:20:40.076593 | Receiver(s) - [0] | Clock Time - 29
+[MESSAGE RECEIVED] | Global Time - 01:20:40.332023 | Queue Length - 0 | Clock Time - 31
+[INTERNAL] | Global Time - 01:20:40.586724 | No Messages Sent | Clock Time - 32
+[MESSAGE(S) SENT] | Global Time - 01:20:40.842992 | Receiver(s) - [0, 1] | Clock Time - 33
+[MESSAGE(S) SENT] | Global Time - 01:20:41.098442 | Receiver(s) - [0, 1] | Clock Time - 34
+[INTERNAL] | Global Time - 01:20:41.352508 | No Messages Sent | Clock Time - 35
+[MESSAGE RECEIVED] | Global Time - 01:20:41.606985 | Queue Length - 0 | Clock Time - 38
+[INTERNAL] | Global Time - 01:20:41.860839 | No Messages Sent | Clock Time - 39
+[MESSAGE(S) SENT] | Global Time - 01:20:42.115616 | Receiver(s) - [0, 1] | Clock Time - 40
+[MESSAGE(S) SENT] | Global Time - 01:20:42.372117 | Receiver(s) - [1] | Clock Time - 41
+[MESSAGE RECEIVED] | Global Time - 01:20:42.625990 | Queue Length - 0 | Clock Time - 43
+[INTERNAL] | Global Time - 01:20:42.878452 | No Messages Sent | Clock Time - 44
+[INTERNAL] | Global Time - 01:20:43.130693 | No Messages Sent | Clock Time - 45
+[MESSAGE RECEIVED] | Global Time - 01:20:43.387063 | Queue Length - 1 | Clock Time - 47
+[MESSAGE RECEIVED] | Global Time - 01:20:43.641422 | Queue Length - 0 | Clock Time - 48
+[INTERNAL] | Global Time - 01:20:43.896292 | No Messages Sent | Clock Time - 49
+[INTERNAL] | Global Time - 01:20:44.150924 | No Messages Sent | Clock Time - 50
+[MESSAGE(S) SENT] | Global Time - 01:20:44.406746 | Receiver(s) - [0, 1] | Clock Time - 51
+[MESSAGE RECEIVED] | Global Time - 01:20:44.661416 | Queue Length - 0 | Clock Time - 53
+[MESSAGE(S) SENT] | Global Time - 01:20:44.916898 | Receiver(s) - [0, 1] | Clock Time - 54
+[INTERNAL] | Global Time - 01:20:45.174012 | No Messages Sent | Clock Time - 55
+[INTERNAL] | Global Time - 01:20:45.428028 | No Messages Sent | Clock Time - 56
+[MESSAGE RECEIVED] | Global Time - 01:20:45.680277 | Queue Length - 0 | Clock Time - 57
+[MESSAGE RECEIVED] | Global Time - 01:20:45.934579 | Queue Length - 0 | Clock Time - 59
+[MESSAGE RECEIVED] | Global Time - 01:20:46.190467 | Queue Length - 0 | Clock Time - 60
+[MESSAGE RECEIVED] | Global Time - 01:20:46.441522 | Queue Length - 0 | Clock Time - 61
+[INTERNAL] | Global Time - 01:20:46.697388 | No Messages Sent | Clock Time - 62
+[INTERNAL] | Global Time - 01:20:46.953834 | No Messages Sent | Clock Time - 63
+[INTERNAL] | Global Time - 01:20:47.205478 | No Messages Sent | Clock Time - 64
+[MESSAGE RECEIVED] | Global Time - 01:20:47.460392 | Queue Length - 0 | Clock Time - 66
+[MESSAGE(S) SENT] | Global Time - 01:20:47.714908 | Receiver(s) - [0, 1] | Clock Time - 67
+[INTERNAL] | Global Time - 01:20:47.970641 | No Messages Sent | Clock Time - 68
+[MESSAGE RECEIVED] | Global Time - 01:20:48.222330 | Queue Length - 0 | Clock Time - 70
+[INTERNAL] | Global Time - 01:20:48.476311 | No Messages Sent | Clock Time - 71
+[INTERNAL] | Global Time - 01:20:48.731380 | No Messages Sent | Clock Time - 72
+[INTERNAL] | Global Time - 01:20:48.985878 | No Messages Sent | Clock Time - 73
+[INTERNAL] | Global Time - 01:20:49.239890 | No Messages Sent | Clock Time - 74
+[INTERNAL] | Global Time - 01:20:49.492553 | No Messages Sent | Clock Time - 75
+[MESSAGE(S) SENT] | Global Time - 01:20:49.746643 | Receiver(s) - [0, 1] | Clock Time - 76
+[INTERNAL] | Global Time - 01:20:50.000391 | No Messages Sent | Clock Time - 77
+[INTERNAL] | Global Time - 01:20:50.254411 | No Messages Sent | Clock Time - 78
+[MESSAGE RECEIVED] | Global Time - 01:20:50.509086 | Queue Length - 0 | Clock Time - 81
+[INTERNAL] | Global Time - 01:20:50.761317 | No Messages Sent | Clock Time - 82
+[MESSAGE RECEIVED] | Global Time - 01:20:51.015671 | Queue Length - 0 | Clock Time - 84
+[INTERNAL] | Global Time - 01:20:51.270976 | No Messages Sent | Clock Time - 85
+[MESSAGE(S) SENT] | Global Time - 01:20:51.526202 | Receiver(s) - [1] | Clock Time - 86
+[INTERNAL] | Global Time - 01:20:51.780535 | No Messages Sent | Clock Time - 87
+[MESSAGE RECEIVED] | Global Time - 01:20:52.036237 | Queue Length - 0 | Clock Time - 88
+[INTERNAL] | Global Time - 01:20:52.291798 | No Messages Sent | Clock Time - 89
+[INTERNAL] | Global Time - 01:20:52.547416 | No Messages Sent | Clock Time - 90
+[INTERNAL] | Global Time - 01:20:52.803092 | No Messages Sent | Clock Time - 91
+[INTERNAL] | Global Time - 01:20:53.059296 | No Messages Sent | Clock Time - 92
+[INTERNAL] | Global Time - 01:20:53.314083 | No Messages Sent | Clock Time - 93
+[INTERNAL] | Global Time - 01:20:53.569791 | No Messages Sent | Clock Time - 94
+[MESSAGE(S) SENT] | Global Time - 01:20:53.825961 | Receiver(s) - [1] | Clock Time - 95
+[MESSAGE(S) SENT] | Global Time - 01:20:54.080894 | Receiver(s) - [1] | Clock Time - 96
+[INTERNAL] | Global Time - 01:20:54.334148 | No Messages Sent | Clock Time - 97
+[INTERNAL] | Global Time - 01:20:54.589393 | No Messages Sent | Clock Time - 98
+[MESSAGE RECEIVED] | Global Time - 01:20:54.844036 | Queue Length - 0 | Clock Time - 102
+[INTERNAL] | Global Time - 01:20:55.104433 | No Messages Sent | Clock Time - 103
+[MESSAGE RECEIVED] | Global Time - 01:20:55.356172 | Queue Length - 0 | Clock Time - 105
+[MESSAGE(S) SENT] | Global Time - 01:20:55.612844 | Receiver(s) - [0, 1] | Clock Time - 106
+[INTERNAL] | Global Time - 01:20:55.868757 | No Messages Sent | Clock Time - 107
+[MESSAGE(S) SENT] | Global Time - 01:20:56.122534 | Receiver(s) - [1] | Clock Time - 108
+[INTERNAL] | Global Time - 01:20:56.378986 | No Messages Sent | Clock Time - 109
+[INTERNAL] | Global Time - 01:20:56.634660 | No Messages Sent | Clock Time - 110
+[MESSAGE RECEIVED] | Global Time - 01:20:56.888746 | Queue Length - 0 | Clock Time - 112
+[MESSAGE RECEIVED] | Global Time - 01:20:57.141526 | Queue Length - 0 | Clock Time - 113
+[MESSAGE(S) SENT] | Global Time - 01:20:57.396635 | Receiver(s) - [1] | Clock Time - 114
+[INTERNAL] | Global Time - 01:20:57.648628 | No Messages Sent | Clock Time - 115
+[MESSAGE(S) SENT] | Global Time - 01:20:57.902732 | Receiver(s) - [1] | Clock Time - 116
+[MESSAGE RECEIVED] | Global Time - 01:20:58.158278 | Queue Length - 0 | Clock Time - 119
+[MESSAGE(S) SENT] | Global Time - 01:20:58.413245 | Receiver(s) - [0, 1] | Clock Time - 120
+[MESSAGE(S) SENT] | Global Time - 01:20:58.665821 | Receiver(s) - [0, 1] | Clock Time - 121
+[INTERNAL] | Global Time - 01:20:58.919420 | No Messages Sent | Clock Time - 122
+[INTERNAL] | Global Time - 01:20:59.172865 | No Messages Sent | Clock Time - 123
+[MESSAGE RECEIVED] | Global Time - 01:20:59.428006 | Queue Length - 0 | Clock Time - 125
+[INTERNAL] | Global Time - 01:20:59.682062 | No Messages Sent | Clock Time - 126
+[MESSAGE(S) SENT] | Global Time - 01:20:59.937442 | Receiver(s) - [0, 1] | Clock Time - 127
+[MESSAGE(S) SENT] | Global Time - 01:21:00.193670 | Receiver(s) - [0, 1] | Clock Time - 128
+[MESSAGE(S) SENT] | Global Time - 01:21:00.448630 | Receiver(s) - [1] | Clock Time - 129
+[MESSAGE(S) SENT] | Global Time - 01:21:00.704249 | Receiver(s) - [0, 1] | Clock Time - 130
+[INTERNAL] | Global Time - 01:21:00.958600 | No Messages Sent | Clock Time - 131
+[MESSAGE RECEIVED] | Global Time - 01:21:01.214776 | Queue Length - 0 | Clock Time - 133
+[MESSAGE(S) SENT] | Global Time - 01:21:01.466752 | Receiver(s) - [1] | Clock Time - 134
+[INTERNAL] | Global Time - 01:21:01.721010 | No Messages Sent | Clock Time - 135
+[MESSAGE RECEIVED] | Global Time - 01:21:01.973217 | Queue Length - 0 | Clock Time - 137
+[INTERNAL] | Global Time - 01:21:02.229033 | No Messages Sent | Clock Time - 138
+[INTERNAL] | Global Time - 01:21:02.484184 | No Messages Sent | Clock Time - 139
+[INTERNAL] | Global Time - 01:21:02.740787 | No Messages Sent | Clock Time - 140
+[MESSAGE RECEIVED] | Global Time - 01:21:02.996321 | Queue Length - 0 | Clock Time - 142
+[INTERNAL] | Global Time - 01:21:03.251548 | No Messages Sent | Clock Time - 143
+[MESSAGE RECEIVED] | Global Time - 01:21:03.504735 | Queue Length - 0 | Clock Time - 144
+[MESSAGE RECEIVED] | Global Time - 01:21:03.760524 | Queue Length - 0 | Clock Time - 146
+[INTERNAL] | Global Time - 01:21:04.014092 | No Messages Sent | Clock Time - 147
+[INTERNAL] | Global Time - 01:21:04.270040 | No Messages Sent | Clock Time - 148
+[INTERNAL] | Global Time - 01:21:04.526427 | No Messages Sent | Clock Time - 149
+[MESSAGE(S) SENT] | Global Time - 01:21:04.781062 | Receiver(s) - [1] | Clock Time - 150
+[INTERNAL] | Global Time - 01:21:05.034601 | No Messages Sent | Clock Time - 151
+[MESSAGE RECEIVED] | Global Time - 01:21:05.291045 | Queue Length - 0 | Clock Time - 153
+[INTERNAL] | Global Time - 01:21:05.547106 | No Messages Sent | Clock Time - 154
+[MESSAGE RECEIVED] | Global Time - 01:21:05.800715 | Queue Length - 0 | Clock Time - 156
+[MESSAGE RECEIVED] | Global Time - 01:21:06.055926 | Queue Length - 0 | Clock Time - 157
+[MESSAGE RECEIVED] | Global Time - 01:21:06.310188 | Queue Length - 0 | Clock Time - 158
+[INTERNAL] | Global Time - 01:21:06.563303 | No Messages Sent | Clock Time - 159
+[MESSAGE(S) SENT] | Global Time - 01:21:06.818651 | Receiver(s) - [1] | Clock Time - 160
+[MESSAGE(S) SENT] | Global Time - 01:21:07.072856 | Receiver(s) - [0] | Clock Time - 161
+[INTERNAL] | Global Time - 01:21:07.326605 | No Messages Sent | Clock Time - 162
+[MESSAGE RECEIVED] | Global Time - 01:21:07.580153 | Queue Length - 0 | Clock Time - 164
+[MESSAGE(S) SENT] | Global Time - 01:21:07.833579 | Receiver(s) - [1] | Clock Time - 165
+[INTERNAL] | Global Time - 01:21:08.090041 | No Messages Sent | Clock Time - 166
+[MESSAGE RECEIVED] | Global Time - 01:21:08.341806 | Queue Length - 1 | Clock Time - 168
+[MESSAGE RECEIVED] | Global Time - 01:21:08.597701 | Queue Length - 0 | Clock Time - 169
+[MESSAGE RECEIVED] | Global Time - 01:21:08.849562 | Queue Length - 0 | Clock Time - 170
+[MESSAGE RECEIVED] | Global Time - 01:21:09.103771 | Queue Length - 0 | Clock Time - 172
+[MESSAGE(S) SENT] | Global Time - 01:21:09.358568 | Receiver(s) - [1] | Clock Time - 173
+[MESSAGE(S) SENT] | Global Time - 01:21:09.611323 | Receiver(s) - [0] | Clock Time - 174
+[MESSAGE(S) SENT] | Global Time - 01:21:09.863373 | Receiver(s) - [1] | Clock Time - 175
+[MESSAGE(S) SENT] | Global Time - 01:21:10.120421 | Receiver(s) - [0, 1] | Clock Time - 176
+[INTERNAL] | Global Time - 01:21:10.373485 | No Messages Sent | Clock Time - 177
+[MESSAGE RECEIVED] | Global Time - 01:21:10.628706 | Queue Length - 0 | Clock Time - 179
+[MESSAGE RECEIVED] | Global Time - 01:21:10.885005 | Queue Length - 0 | Clock Time - 181
+[MESSAGE(S) SENT] | Global Time - 01:21:11.140818 | Receiver(s) - [1] | Clock Time - 182
+[MESSAGE RECEIVED] | Global Time - 01:21:11.395680 | Queue Length - 0 | Clock Time - 183
+[INTERNAL] | Global Time - 01:21:11.652688 | No Messages Sent | Clock Time - 184
+[INTERNAL] | Global Time - 01:21:11.909218 | No Messages Sent | Clock Time - 185
+[MESSAGE RECEIVED] | Global Time - 01:21:12.163454 | Queue Length - 0 | Clock Time - 187
+[INTERNAL] | Global Time - 01:21:12.418241 | No Messages Sent | Clock Time - 188
+[MESSAGE RECEIVED] | Global Time - 01:21:12.672944 | Queue Length - 0 | Clock Time - 189
+[INTERNAL] | Global Time - 01:21:12.925672 | No Messages Sent | Clock Time - 190
+[INTERNAL] | Global Time - 01:21:13.176967 | No Messages Sent | Clock Time - 191
+[MESSAGE RECEIVED] | Global Time - 01:21:13.431258 | Queue Length - 0 | Clock Time - 193
+[MESSAGE RECEIVED] | Global Time - 01:21:13.684570 | Queue Length - 0 | Clock Time - 194
+[MESSAGE RECEIVED] | Global Time - 01:21:13.940290 | Queue Length - 1 | Clock Time - 195
+[MESSAGE RECEIVED] | Global Time - 01:21:14.191624 | Queue Length - 0 | Clock Time - 196
+[INTERNAL] | Global Time - 01:21:14.444901 | No Messages Sent | Clock Time - 197
+[MESSAGE(S) SENT] | Global Time - 01:21:14.701792 | Receiver(s) - [0] | Clock Time - 198
+[INTERNAL] | Global Time - 01:21:14.956583 | No Messages Sent | Clock Time - 199
+[MESSAGE(S) SENT] | Global Time - 01:21:15.211232 | Receiver(s) - [0] | Clock Time - 200
+[MESSAGE RECEIVED] | Global Time - 01:21:15.467565 | Queue Length - 0 | Clock Time - 203
+[MESSAGE(S) SENT] | Global Time - 01:21:15.722778 | Receiver(s) - [0] | Clock Time - 204
+[MESSAGE(S) SENT] | Global Time - 01:21:15.975521 | Receiver(s) - [0, 1] | Clock Time - 205
+[INTERNAL] | Global Time - 01:21:16.227430 | No Messages Sent | Clock Time - 206
+[INTERNAL] | Global Time - 01:21:16.480557 | No Messages Sent | Clock Time - 207
+[INTERNAL] | Global Time - 01:21:16.735796 | No Messages Sent | Clock Time - 208
+[MESSAGE RECEIVED] | Global Time - 01:21:16.992353 | Queue Length - 0 | Clock Time - 210
+[MESSAGE RECEIVED] | Global Time - 01:21:17.244489 | Queue Length - 2 | Clock Time - 211
+[MESSAGE RECEIVED] | Global Time - 01:21:17.496862 | Queue Length - 1 | Clock Time - 212
+[MESSAGE RECEIVED] | Global Time - 01:21:17.752286 | Queue Length - 1 | Clock Time - 213
+[MESSAGE RECEIVED] | Global Time - 01:21:18.005606 | Queue Length - 0 | Clock Time - 214
+[INTERNAL] | Global Time - 01:21:18.260894 | No Messages Sent | Clock Time - 215
+[MESSAGE(S) SENT] | Global Time - 01:21:18.517344 | Receiver(s) - [0, 1] | Clock Time - 216
+[INTERNAL] | Global Time - 01:21:18.773552 | No Messages Sent | Clock Time - 217
+[MESSAGE RECEIVED] | Global Time - 01:21:19.029609 | Queue Length - 0 | Clock Time - 220
+[INTERNAL] | Global Time - 01:21:19.285796 | No Messages Sent | Clock Time - 221
+[MESSAGE(S) SENT] | Global Time - 01:21:19.541963 | Receiver(s) - [0] | Clock Time - 222
+[MESSAGE RECEIVED] | Global Time - 01:21:19.798239 | Queue Length - 0 | Clock Time - 224
+[MESSAGE RECEIVED] | Global Time - 01:21:20.053613 | Queue Length - 0 | Clock Time - 225
+[MESSAGE RECEIVED] | Global Time - 01:21:20.309792 | Queue Length - 0 | Clock Time - 227
+[INTERNAL] | Global Time - 01:21:20.565844 | No Messages Sent | Clock Time - 228
+[INTERNAL] | Global Time - 01:21:20.821824 | No Messages Sent | Clock Time - 229
+[MESSAGE RECEIVED] | Global Time - 01:21:21.077295 | Queue Length - 0 | Clock Time - 230
+[MESSAGE RECEIVED] | Global Time - 01:21:21.331676 | Queue Length - 1 | Clock Time - 231
+[MESSAGE RECEIVED] | Global Time - 01:21:21.586144 | Queue Length - 1 | Clock Time - 232
+[MESSAGE RECEIVED] | Global Time - 01:21:21.841268 | Queue Length - 0 | Clock Time - 233
+[INTERNAL] | Global Time - 01:21:22.097001 | No Messages Sent | Clock Time - 234
+[MESSAGE RECEIVED] | Global Time - 01:21:22.349929 | Queue Length - 0 | Clock Time - 236
+[INTERNAL] | Global Time - 01:21:22.605911 | No Messages Sent | Clock Time - 237
+[MESSAGE(S) SENT] | Global Time - 01:21:22.862053 | Receiver(s) - [1] | Clock Time - 238
+[INTERNAL] | Global Time - 01:21:23.117732 | No Messages Sent | Clock Time - 239
+[MESSAGE(S) SENT] | Global Time - 01:21:23.373657 | Receiver(s) - [1] | Clock Time - 240
+[MESSAGE RECEIVED] | Global Time - 01:21:23.628614 | Queue Length - 1 | Clock Time - 243
+[MESSAGE RECEIVED] | Global Time - 01:21:23.884930 | Queue Length - 0 | Clock Time - 244
+[MESSAGE RECEIVED] | Global Time - 01:21:24.141535 | Queue Length - 0 | Clock Time - 245
+[MESSAGE(S) SENT] | Global Time - 01:21:24.394733 | Receiver(s) - [0] | Clock Time - 246
+[INTERNAL] | Global Time - 01:21:24.649726 | No Messages Sent | Clock Time - 247
+[INTERNAL] | Global Time - 01:21:24.905304 | No Messages Sent | Clock Time - 248
+[INTERNAL] | Global Time - 01:21:25.161603 | No Messages Sent | Clock Time - 249
+[INTERNAL] | Global Time - 01:21:25.418489 | No Messages Sent | Clock Time - 250
+[MESSAGE RECEIVED] | Global Time - 01:21:25.674894 | Queue Length - 1 | Clock Time - 253
+[MESSAGE RECEIVED] | Global Time - 01:21:25.931216 | Queue Length - 0 | Clock Time - 254
+[INTERNAL] | Global Time - 01:21:26.186765 | No Messages Sent | Clock Time - 255
+[INTERNAL] | Global Time - 01:21:26.441955 | No Messages Sent | Clock Time - 256
+[MESSAGE RECEIVED] | Global Time - 01:21:26.697280 | Queue Length - 0 | Clock Time - 257
+[MESSAGE RECEIVED] | Global Time - 01:21:26.950295 | Queue Length - 1 | Clock Time - 259
+[MESSAGE RECEIVED] | Global Time - 01:21:27.204645 | Queue Length - 1 | Clock Time - 260
+[MESSAGE RECEIVED] | Global Time - 01:21:27.455657 | Queue Length - 0 | Clock Time - 261
+[INTERNAL] | Global Time - 01:21:27.710594 | No Messages Sent | Clock Time - 262
+[INTERNAL] | Global Time - 01:21:27.962521 | No Messages Sent | Clock Time - 263
+[MESSAGE RECEIVED] | Global Time - 01:21:28.216487 | Queue Length - 0 | Clock Time - 265
+[INTERNAL] | Global Time - 01:21:28.470657 | No Messages Sent | Clock Time - 266
+[MESSAGE RECEIVED] | Global Time - 01:21:28.722607 | Queue Length - 0 | Clock Time - 267
+[INTERNAL] | Global Time - 01:21:28.977163 | No Messages Sent | Clock Time - 268
+[INTERNAL] | Global Time - 01:21:29.233127 | No Messages Sent | Clock Time - 269
+[MESSAGE RECEIVED] | Global Time - 01:21:29.487673 | Queue Length - 0 | Clock Time - 271
+[MESSAGE RECEIVED] | Global Time - 01:21:29.742900 | Queue Length - 0 | Clock Time - 273
+[MESSAGE RECEIVED] | Global Time - 01:21:29.995402 | Queue Length - 1 | Clock Time - 274
+[MESSAGE RECEIVED] | Global Time - 01:21:30.248726 | Queue Length - 1 | Clock Time - 275
+[MESSAGE RECEIVED] | Global Time - 01:21:30.503176 | Queue Length - 0 | Clock Time - 276
+[INTERNAL] | Global Time - 01:21:30.759246 | No Messages Sent | Clock Time - 277
+[MESSAGE RECEIVED] | Global Time - 01:21:31.014619 | Queue Length - 0 | Clock Time - 279
+[INTERNAL] | Global Time - 01:21:31.269160 | No Messages Sent | Clock Time - 280
+[MESSAGE RECEIVED] | Global Time - 01:21:31.523348 | Queue Length - 0 | Clock Time - 281
+[MESSAGE(S) SENT] | Global Time - 01:21:31.777570 | Receiver(s) - [0, 1] | Clock Time - 282
+[MESSAGE RECEIVED] | Global Time - 01:21:32.033650 | Queue Length - 0 | Clock Time - 283
+[MESSAGE RECEIVED] | Global Time - 01:21:32.290187 | Queue Length - 0 | Clock Time - 285
+[MESSAGE RECEIVED] | Global Time - 01:21:32.546920 | Queue Length - 0 | Clock Time - 286
+[INTERNAL] | Global Time - 01:21:32.802145 | No Messages Sent | Clock Time - 287
+[INTERNAL] | Global Time - 01:21:33.053921 | No Messages Sent | Clock Time - 288
+[INTERNAL] | Global Time - 01:21:33.308064 | No Messages Sent | Clock Time - 289
+[INTERNAL] | Global Time - 01:21:33.560022 | No Messages Sent | Clock Time - 290
+[MESSAGE RECEIVED] | Global Time - 01:21:33.814124 | Queue Length - 0 | Clock Time - 292
+[MESSAGE(S) SENT] | Global Time - 01:21:34.070085 | Receiver(s) - [0, 1] | Clock Time - 293
+[INTERNAL] | Global Time - 01:21:34.325759 | No Messages Sent | Clock Time - 294
+[MESSAGE(S) SENT] | Global Time - 01:21:34.580578 | Receiver(s) - [0] | Clock Time - 295
+[INTERNAL] | Global Time - 01:21:34.835207 | No Messages Sent | Clock Time - 296
+[MESSAGE RECEIVED] | Global Time - 01:21:35.091536 | Queue Length - 1 | Clock Time - 298
+[MESSAGE RECEIVED] | Global Time - 01:21:35.347102 | Queue Length - 0 | Clock Time - 299
+[INTERNAL] | Global Time - 01:21:35.604199 | No Messages Sent | Clock Time - 300
+[INTERNAL] | Global Time - 01:21:35.858226 | No Messages Sent | Clock Time - 301
+[MESSAGE RECEIVED] | Global Time - 01:21:36.112798 | Queue Length - 0 | Clock Time - 304
+[INTERNAL] | Global Time - 01:21:36.368059 | No Messages Sent | Clock Time - 305
+[INTERNAL] | Global Time - 01:21:36.623604 | No Messages Sent | Clock Time - 306
+[MESSAGE RECEIVED] | Global Time - 01:21:36.879454 | Queue Length - 0 | Clock Time - 307
+[INTERNAL] | Global Time - 01:21:37.135215 | No Messages Sent | Clock Time - 308
+[MESSAGE RECEIVED] | Global Time - 01:21:37.389789 | Queue Length - 0 | Clock Time - 310
+[INTERNAL] | Global Time - 01:21:37.643095 | No Messages Sent | Clock Time - 311
+[MESSAGE RECEIVED] | Global Time - 01:21:37.894995 | Queue Length - 0 | Clock Time - 312
+[MESSAGE RECEIVED] | Global Time - 01:21:38.147510 | Queue Length - 0 | Clock Time - 314
+[INTERNAL] | Global Time - 01:21:38.400196 | No Messages Sent | Clock Time - 315
+[MESSAGE RECEIVED] | Global Time - 01:21:38.655556 | Queue Length - 0 | Clock Time - 316
+[MESSAGE(S) SENT] | Global Time - 01:21:38.907536 | Receiver(s) - [0] | Clock Time - 317
+[INTERNAL] | Global Time - 01:21:39.161294 | No Messages Sent | Clock Time - 318
+[MESSAGE(S) SENT] | Global Time - 01:21:39.413293 | Receiver(s) - [1] | Clock Time - 319
+[INTERNAL] | Global Time - 01:21:39.665854 | No Messages Sent | Clock Time - 320
+[MESSAGE RECEIVED] | Global Time - 01:21:39.921214 | Queue Length - 0 | Clock Time - 322
+[INTERNAL] | Global Time - 01:21:40.173577 | No Messages Sent | Clock Time - 323
+[MESSAGE RECEIVED] | Global Time - 01:21:40.428644 | Queue Length - 0 | Clock Time - 325
+[INTERNAL] | Global Time - 01:21:40.685352 | No Messages Sent | Clock Time - 326
+[MESSAGE RECEIVED] | Global Time - 01:21:40.942045 | Queue Length - 0 | Clock Time - 327
+[INTERNAL] | Global Time - 01:21:41.198180 | No Messages Sent | Clock Time - 328
+[MESSAGE(S) SENT] | Global Time - 01:21:41.452843 | Receiver(s) - [0] | Clock Time - 329
+[MESSAGE(S) SENT] | Global Time - 01:21:41.704319 | Receiver(s) - [0, 1] | Clock Time - 330
+[INTERNAL] | Global Time - 01:21:41.959066 | No Messages Sent | Clock Time - 331
+[MESSAGE RECEIVED] | Global Time - 01:21:42.212961 | Queue Length - 0 | Clock Time - 333
+[MESSAGE RECEIVED] | Global Time - 01:21:42.464069 | Queue Length - 0 | Clock Time - 334
+[INTERNAL] | Global Time - 01:21:42.719321 | No Messages Sent | Clock Time - 335
+[MESSAGE(S) SENT] | Global Time - 01:21:42.973380 | Receiver(s) - [0] | Clock Time - 336
+[INTERNAL] | Global Time - 01:21:43.226406 | No Messages Sent | Clock Time - 337
+[MESSAGE RECEIVED] | Global Time - 01:21:43.479419 | Queue Length - 0 | Clock Time - 339
+[MESSAGE RECEIVED] | Global Time - 01:21:43.735602 | Queue Length - 0 | Clock Time - 341
+[INTERNAL] | Global Time - 01:21:43.991683 | No Messages Sent | Clock Time - 342
+[INTERNAL] | Global Time - 01:21:44.248338 | No Messages Sent | Clock Time - 343
+[MESSAGE RECEIVED] | Global Time - 01:21:44.503140 | Queue Length - 0 | Clock Time - 344
+[INTERNAL] | Global Time - 01:21:44.755726 | No Messages Sent | Clock Time - 345
+[INTERNAL] | Global Time - 01:21:45.012974 | No Messages Sent | Clock Time - 346
+[MESSAGE RECEIVED] | Global Time - 01:21:45.267034 | Queue Length - 0 | Clock Time - 348
+[MESSAGE RECEIVED] | Global Time - 01:21:45.523408 | Queue Length - 0 | Clock Time - 349
+[INTERNAL] | Global Time - 01:21:45.775235 | No Messages Sent | Clock Time - 350
+[INTERNAL] | Global Time - 01:21:46.028374 | No Messages Sent | Clock Time - 351
+[MESSAGE RECEIVED] | Global Time - 01:21:46.283332 | Queue Length - 0 | Clock Time - 353
+[MESSAGE(S) SENT] | Global Time - 01:21:46.536055 | Receiver(s) - [1] | Clock Time - 354
+[INTERNAL] | Global Time - 01:21:46.791540 | No Messages Sent | Clock Time - 355
+[MESSAGE RECEIVED] | Global Time - 01:21:47.045007 | Queue Length - 0 | Clock Time - 357
+[MESSAGE RECEIVED] | Global Time - 01:21:47.299837 | Queue Length - 1 | Clock Time - 358
+[MESSAGE RECEIVED] | Global Time - 01:21:47.555426 | Queue Length - 1 | Clock Time - 359
+[MESSAGE RECEIVED] | Global Time - 01:21:47.810531 | Queue Length - 0 | Clock Time - 360
+[INTERNAL] | Global Time - 01:21:48.064734 | No Messages Sent | Clock Time - 361
+[MESSAGE RECEIVED] | Global Time - 01:21:48.321088 | Queue Length - 0 | Clock Time - 363
+[MESSAGE RECEIVED] | Global Time - 01:21:48.574575 | Queue Length - 1 | Clock Time - 364
+[MESSAGE RECEIVED] | Global Time - 01:21:48.826447 | Queue Length - 0 | Clock Time - 365
+[INTERNAL] | Global Time - 01:21:49.080624 | No Messages Sent | Clock Time - 366
+[MESSAGE RECEIVED] | Global Time - 01:21:49.333702 | Queue Length - 0 | Clock Time - 368
+[INTERNAL] | Global Time - 01:21:49.590045 | No Messages Sent | Clock Time - 369
+[INTERNAL] | Global Time - 01:21:49.842015 | No Messages Sent | Clock Time - 370
+[INTERNAL] | Global Time - 01:21:50.097764 | No Messages Sent | Clock Time - 371
+[MESSAGE RECEIVED] | Global Time - 01:21:50.354057 | Queue Length - 0 | Clock Time - 373
+[MESSAGE(S) SENT] | Global Time - 01:21:50.606549 | Receiver(s) - [0, 1] | Clock Time - 374
+[MESSAGE(S) SENT] | Global Time - 01:21:50.859659 | Receiver(s) - [0, 1] | Clock Time - 375
+[INTERNAL] | Global Time - 01:21:51.115767 | No Messages Sent | Clock Time - 376
+[INTERNAL] | Global Time - 01:21:51.372300 | No Messages Sent | Clock Time - 377
+[INTERNAL] | Global Time - 01:21:51.628628 | No Messages Sent | Clock Time - 378
+[INTERNAL] | Global Time - 01:21:51.885412 | No Messages Sent | Clock Time - 379
+[MESSAGE(S) SENT] | Global Time - 01:21:52.141798 | Receiver(s) - [0, 1] | Clock Time - 380
+[MESSAGE(S) SENT] | Global Time - 01:21:52.398642 | Receiver(s) - [1] | Clock Time - 381
+[INTERNAL] | Global Time - 01:21:52.655478 | No Messages Sent | Clock Time - 382
+[MESSAGE RECEIVED] | Global Time - 01:21:52.912335 | Queue Length - 0 | Clock Time - 385
+[INTERNAL] | Global Time - 01:21:53.167958 | No Messages Sent | Clock Time - 386
+[INTERNAL] | Global Time - 01:21:53.423325 | No Messages Sent | Clock Time - 387
+[MESSAGE(S) SENT] | Global Time - 01:21:53.677261 | Receiver(s) - [0] | Clock Time - 388
+[MESSAGE RECEIVED] | Global Time - 01:21:53.932594 | Queue Length - 0 | Clock Time - 391
+[INTERNAL] | Global Time - 01:21:54.189610 | No Messages Sent | Clock Time - 392
+[MESSAGE RECEIVED] | Global Time - 01:21:54.443994 | Queue Length - 0 | Clock Time - 393
+[MESSAGE RECEIVED] | Global Time - 01:21:54.700346 | Queue Length - 0 | Clock Time - 394
+[INTERNAL] | Global Time - 01:21:54.955629 | No Messages Sent | Clock Time - 395
+[MESSAGE(S) SENT] | Global Time - 01:21:55.210457 | Receiver(s) - [0] | Clock Time - 396
+[MESSAGE(S) SENT] | Global Time - 01:21:55.466933 | Receiver(s) - [1] | Clock Time - 397
+[MESSAGE(S) SENT] | Global Time - 01:21:55.721863 | Receiver(s) - [0] | Clock Time - 398
+[MESSAGE(S) SENT] | Global Time - 01:21:55.977524 | Receiver(s) - [1] | Clock Time - 399
+[INTERNAL] | Global Time - 01:21:56.233316 | No Messages Sent | Clock Time - 400
+[MESSAGE RECEIVED] | Global Time - 01:21:56.487901 | Queue Length - 0 | Clock Time - 403
+[MESSAGE RECEIVED] | Global Time - 01:21:56.742392 | Queue Length - 0 | Clock Time - 404
+[MESSAGE(S) SENT] | Global Time - 01:21:56.997441 | Receiver(s) - [0] | Clock Time - 405
+[MESSAGE RECEIVED] | Global Time - 01:21:57.254278 | Queue Length - 0 | Clock Time - 407
+[MESSAGE RECEIVED] | Global Time - 01:21:57.508918 | Queue Length - 0 | Clock Time - 408
+[MESSAGE(S) SENT] | Global Time - 01:21:57.760937 | Receiver(s) - [1] | Clock Time - 409
+[MESSAGE RECEIVED] | Global Time - 01:21:58.015209 | Queue Length - 0 | Clock Time - 411
+[INTERNAL] | Global Time - 01:21:58.270919 | No Messages Sent | Clock Time - 412
+[INTERNAL] | Global Time - 01:21:58.525729 | No Messages Sent | Clock Time - 413
+[MESSAGE(S) SENT] | Global Time - 01:21:58.779627 | Receiver(s) - [0, 1] | Clock Time - 414
+[MESSAGE(S) SENT] | Global Time - 01:21:59.034476 | Receiver(s) - [0, 1] | Clock Time - 415
+[INTERNAL] | Global Time - 01:21:59.289506 | No Messages Sent | Clock Time - 416

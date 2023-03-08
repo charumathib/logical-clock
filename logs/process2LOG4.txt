@@ -1,0 +1,33 @@
+ticks per second: 4.0
+[INTERNAL] | Global Time - 01:32:23.583246 | No Messages Sent | Clock Time - 2
+[INTERNAL] | Global Time - 01:32:23.841630 | No Messages Sent | Clock Time - 3
+[INTERNAL] | Global Time - 01:32:24.096401 | No Messages Sent | Clock Time - 4
+[MESSAGE RECEIVED] | Global Time - 01:32:24.349217 | Queue Length - 0 | Clock Time - 5
+[INTERNAL] | Global Time - 01:32:24.605609 | No Messages Sent | Clock Time - 6
+[INTERNAL] | Global Time - 01:32:24.861043 | No Messages Sent | Clock Time - 7
+[MESSAGE(S) SENT] | Global Time - 01:32:25.117962 | Receiver(s) - [0] | Clock Time - 8
+[MESSAGE RECEIVED] | Global Time - 01:32:25.369564 | Queue Length - 0 | Clock Time - 9
+[INTERNAL] | Global Time - 01:32:25.622334 | No Messages Sent | Clock Time - 10
+[MESSAGE RECEIVED] | Global Time - 01:32:25.877768 | Queue Length - 0 | Clock Time - 11
+[INTERNAL] | Global Time - 01:32:26.132195 | No Messages Sent | Clock Time - 12
+[INTERNAL] | Global Time - 01:32:26.385731 | No Messages Sent | Clock Time - 13
+[INTERNAL] | Global Time - 01:32:26.639700 | No Messages Sent | Clock Time - 14
+[MESSAGE RECEIVED] | Global Time - 01:32:26.893429 | Queue Length - 0 | Clock Time - 15
+[INTERNAL] | Global Time - 01:32:27.148978 | No Messages Sent | Clock Time - 16
+[INTERNAL] | Global Time - 01:32:27.400125 | No Messages Sent | Clock Time - 17
+[MESSAGE(S) SENT] | Global Time - 01:32:27.655841 | Receiver(s) - [0] | Clock Time - 18
+[INTERNAL] | Global Time - 01:32:27.912893 | No Messages Sent | Clock Time - 19
+[INTERNAL] | Global Time - 01:32:28.166240 | No Messages Sent | Clock Time - 20
+[INTERNAL] | Global Time - 01:32:28.421965 | No Messages Sent | Clock Time - 21
+[INTERNAL] | Global Time - 01:32:28.676223 | No Messages Sent | Clock Time - 22
+[INTERNAL] | Global Time - 01:32:28.929717 | No Messages Sent | Clock Time - 23
+[MESSAGE RECEIVED] | Global Time - 01:32:29.185973 | Queue Length - 0 | Clock Time - 24
+[INTERNAL] | Global Time - 01:32:29.442631 | No Messages Sent | Clock Time - 25
+[MESSAGE(S) SENT] | Global Time - 01:32:29.697773 | Receiver(s) - [0] | Clock Time - 26
+[INTERNAL] | Global Time - 01:32:29.953919 | No Messages Sent | Clock Time - 27
+[INTERNAL] | Global Time - 01:32:30.208140 | No Messages Sent | Clock Time - 28
+[INTERNAL] | Global Time - 01:32:30.462484 | No Messages Sent | Clock Time - 29
+[INTERNAL] | Global Time - 01:32:30.713402 | No Messages Sent | Clock Time - 30
+[INTERNAL] | Global Time - 01:32:30.968918 | No Messages Sent | Clock Time - 31
+[MESSAGE(S) SENT] | Global Time - 01:32:31.224282 | Receiver(s) - [0, 1] | Clock Time - 32
+[MESSAGE(S) SENT] | Global Time - 01:32:31.478542 | Receiver(s) - [0] | Clock Time - 33

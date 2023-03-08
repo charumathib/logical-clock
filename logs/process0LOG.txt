@@ -1,0 +1,19 @@
+ticks per second: 2.0
+[MESSAGE RECEIVED] | Global Time - 14:38:42.159868 | Queue Length - 1 | Clock Time - 2
+[MESSAGE RECEIVED] | Global Time - 14:38:42.664808 | Queue Length - 2 | Clock Time - 3
+[MESSAGE RECEIVED] | Global Time - 14:38:43.167763 | Queue Length - 3 | Clock Time - 4
+[MESSAGE RECEIVED] | Global Time - 14:38:43.670558 | Queue Length - 2 | Clock Time - 5
+[MESSAGE RECEIVED] | Global Time - 14:38:44.172414 | Queue Length - 2 | Clock Time - 7
+[MESSAGE RECEIVED] | Global Time - 14:38:44.673026 | Queue Length - 3 | Clock Time - 8
+[MESSAGE RECEIVED] | Global Time - 14:38:45.175440 | Queue Length - 2 | Clock Time - 13
+[MESSAGE RECEIVED] | Global Time - 14:38:45.680788 | Queue Length - 2 | Clock Time - 14
+[MESSAGE RECEIVED] | Global Time - 14:38:46.182271 | Queue Length - 1 | Clock Time - 15
+[MESSAGE RECEIVED] | Global Time - 14:38:46.682914 | Queue Length - 1 | Clock Time - 19
+[MESSAGE RECEIVED] | Global Time - 14:38:47.187454 | Queue Length - 0 | Clock Time - 25
+[MESSAGE(S) SENT] | Global Time - 14:38:47.691886 | Receiver(s) - [2] | Clock Time - 26
+[MESSAGE RECEIVED] | Global Time - 14:38:48.196038 | Queue Length - 0 | Clock Time - 32
+[MESSAGE RECEIVED] | Global Time - 14:38:48.696358 | Queue Length - 1 | Clock Time - 34
+[MESSAGE RECEIVED] | Global Time - 14:38:49.199881 | Queue Length - 1 | Clock Time - 35
+[MESSAGE RECEIVED] | Global Time - 14:38:49.703031 | Queue Length - 2 | Clock Time - 37
+[MESSAGE RECEIVED] | Global Time - 14:38:50.203343 | Queue Length - 1 | Clock Time - 40
+[MESSAGE RECEIVED] | Global Time - 14:38:50.704689 | Queue Length - 1 | Clock Time - 41
