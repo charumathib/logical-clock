@@ -39,11 +39,7 @@ def process_messages(pid: int, sleepDuration: float):
     # sleep to give time for all processes to be started
     time.sleep(5)
 
-    # open log file (overwriting if one already exists)
-    logFile = open(f"logs/process{pid}{LOG_NAME}.txt", "w")
-    logFile.write(f"ticks per second: {1/sleepDuration}\n")
-
-    # get pid of the other two processes
+    # get pids of the other two processes
     otherProcesses = list({0, 1, 2} - {pid})
     otherProcesses.sort()
     print(f"[{pid}] communicating with {otherProcesses}")
@@ -61,22 +57,30 @@ def process_messages(pid: int, sleepDuration: float):
                 connected = True
                 print(f"[{pid}] connected to {process}")
             # if unable to connect, just try again
-            except Exception as e:
-                print(f"[{pid}] can't connect to {process} - sleeping: {e}")
-                time.sleep(1)
+            except:
+                print(f"[{pid}] can't connect to {process} - terminating process")
+                os.kill(os.getppid(), signal.SIGKILL)
 
-    while True:
-        # sleep for specified number of seconds
-        print(f"[{pid}] sleeping for {sleepDuration} seconds")
-        time.sleep(sleepDuration)
+    # open log file (overwriting if one already exists)
+    with open(f"logs/process{pid}{LOG_NAME}.txt", "w") as logFile:
+        logFile.write(f"ticks per second: {1/sleepDuration}\n")
 
-        # process messages from the message queue if they exist
-        if messageQueue[pid]:
-            # set logical clock to the maximum of local clock and received message; log event
-            message = messageQueue[pid].pop(0)
-            clock = max(message, clock) + 1
-            logFile.write(f"[MESSAGE RECEIVED] Time: {datetime.now().strftime('%H:%M:%S.%f')} Queue Length: {len(messageQueue[pid])} Clock Time: {clock}\n")
-        else:
+        while True:
+            # sleep for specified number of seconds
+            print(f"[{pid}] sleeping for {sleepDuration} seconds")
+            time.sleep(sleepDuration)
+
+            # process messages from the message queue if they exist
+            if messageQueue[pid]:
+                # set logical clock to the maximum of local clock and received message; log event
+                message = messageQueue[pid].pop(0)
+                # logical clock IR2, then IR1
+                clock = max(message, clock) + 1
+                logFile.write(f"[MESSAGE RECEIVED] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Queue Length - {len(messageQueue[pid])} | Clock Time - {clock}\n")
+                # the operation was reading the message, time to sleep again after flushing
+                logFile.flush()
+                continue 
+
             # generate random number to decide what event will occur
             num = randint(1, 10)
             print(f"[{pid}] generated number {num}")
@@ -90,13 +94,12 @@ def process_messages(pid: int, sleepDuration: float):
             elif num == 3:
                 toSend = [0, 1]
             
-
             # send messages
-            print(f"[{pid}] sending messages to {len(toSend)} other processes ")
+            print(f"[{pid}] sending messages to {len(toSend)} other process(es)")
 
             try:
                 for rec in toSend:
-                    print(f"sending message to {otherProcesses[rec]}")
+                    print(f"[{pid}] sending message to {otherProcesses[rec]}")
                     sockets[otherProcesses[rec]].sendall(clock.to_bytes(MESSAGE_SIZE, "big"))
             except:
                 print(f"[{pid}] there is an error communicating with the server - terminating process")
@@ -106,27 +109,27 @@ def process_messages(pid: int, sleepDuration: float):
                         sock.close()
                 os.kill(os.getppid(), signal.SIGKILL)
 
-            # update logical clock
+            # update logical clock (IR1)
             clock += 1
 
             # log message send event
-            for rec in toSend:
-                logFile.write(f"[MESSAGE SENT] Time: {datetime.now().strftime('%H:%M:%S.%f')} Receiver: {otherProcesses[rec]} Clock Time: {clock}\n")
+            if toSend:
+                logFile.write(f"[MESSAGE(S) SENT] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Receiver(s) - {[otherProcesses[rec] for rec in toSend]} | Clock Time - {clock}\n")
             # log internal event
-            if not toSend:
-                logFile.write(f"[INTERNAL] Time: {datetime.now().strftime('%H:%M:%S.%f')} Receiver: {pid} Clock Time: {clock}\n")
+            else:
+                logFile.write(f"[INTERNAL] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | No Messages Sent | Clock Time - {clock}\n")
 
-        # flush the log file to ensure that everything is written before the next clock cycle
-        logFile.flush()
+            # flush the log file to ensure that everything is written before the next clock cycle
+            logFile.flush()
 
 
 def service_connection(pid: int, clientSocket):
     """
-    Adds messages sent to the server from a client to the appropriate process' message queue.
+    Adds messages sent to the server from a client to the appropriate process's message queue.
 
     Args:
     pid - the process id (must be 0, 1 or 2 and must be unique)
-    clientSocket - the client's socket object returned from .accept()
+    clientSocket - the processes's client's socket object returned from .accept()
     """
     global messageQueue
     while True:
@@ -139,11 +142,11 @@ def service_connection(pid: int, clientSocket):
                 raise
         # there is an error communicating with the client; quit the program
         except Exception as e:
-            print(e)
-            print(f"[{pid}] there is an error communicating with a client - terminating process")
+            print(f"[{pid}] there is an error communicating with a client - terminating process: {e}")
             clientSocket.close()
             os.kill(os.getppid(), signal.SIGKILL)
 
+        # add message to the process's message queue
         message = int.from_bytes(rec, "big")
         print(f"[{pid}] received message {message}")
         messageQueue[pid].append(message)
@@ -174,8 +177,8 @@ def init_server(pid: int):
                 c, addr = serverSock.accept()
                 print(f"[{pid}] connected to process {addr[0]}:{addr[1]}")
             # if the .accept() function throws an error this is irrecoverable; exit the process with status code 7
-            except:
-                print(f"[{pid}] error accepting connection - terminating process")
+            except Exception as e:
+                print(f"[{pid}] error accepting connection - terminating process: {e}")
                 os.kill(os.getppid(), signal.SIGKILL)
             # start a new thread for each client connection
             listener = threading.Thread(target=service_connection, args=(pid, c,))
@@ -184,8 +187,9 @@ def init_server(pid: int):
 
 def init_process(pid: int):
     """
-    Initializes a process with a server thread which waits for incoming connections and a processor thread
-    that processes events.
+    Initializes a process with a server thread which waits for incoming connections and adds
+    incoming messages to the process's queue, and a processor thread that processes events and
+    maintains the logical clock.
 
     Args:
     pid - the process id (must be 0, 1 or 2 and must be unique)
@@ -220,6 +224,7 @@ if __name__ == "__main__":
         for process in processes:
             process.join()
     
+    # catch interrupts; we do not currently close file descriptors 
     except KeyboardInterrupt:
         print("\nExiting...")
         os._exit(0)
