@@ -21,7 +21,7 @@ TICKS = [1, 5, 6]
 INTERNAL_EVENT_CAP = 10
 
 # ports for each process' server
-ports = {0: 21522, 1: 21523, 2: 21524}
+ports = {0: 23522, 1: 23523, 2: 23524}
 
 # stores messages for each of the three processes; since these queues are populated via socket communications and are never
 # appended to directly by a process (when an event is generated) this is not considered shared memory
@@ -29,6 +29,36 @@ messageQueue = [[], [], []]
 
 # maintain references to all threads to prevent garbage collection
 threads = []
+
+# helper functions
+# handle a new message by updating the logical clock and writing to a logfile
+def handle_message_receipt(queue, clock, logFile):
+    message = queue.pop(0)
+    clock = max(message, clock) + 1
+    logFile.write(f"[MESSAGE RECEIVED] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Queue Length - {len(queue)} | Clock Time - {clock}\n")
+    # the operation was reading the message, time to sleep again after flushing
+    logFile.flush()
+    # logical clock IR2, then IR1
+    return clock
+
+def get_recipients(num):
+    toSend = []
+    if num == 1:
+        toSend = [0]
+    elif num == 2:
+        toSend = [1]
+    elif num == 3:
+        toSend = [0, 1]
+    return toSend
+
+# log a message being sent, or an internal operation (depending on whether or not toSend is empty)
+def log_message_send(toSend, otherProcesses, clock, logFile):
+    if toSend:
+        logFile.write(f"[MESSAGE(S) SENT] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Receiver(s) - {[otherProcesses[rec] for rec in toSend]} | Clock Time - {clock}\n")
+    else:
+        logFile.write(f"[INTERNAL] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | No Messages Sent | Clock Time - {clock}\n")
+    # flush the log file to ensure that everything is written before the next clock cycle
+    logFile.flush()
 
 def process_messages(pid: int, sleepDuration: float):
     """
@@ -65,7 +95,7 @@ def process_messages(pid: int, sleepDuration: float):
             # if unable to connect, just try again
             except:
                 print(f"[{pid}] can't connect to {process} - terminating process")
-                os.kill(os.getppid(), signal.SIGKILL)
+                os._exit(1)
 
     # open log file (overwriting if one already exists), with LOG_NAME suffix
     with open(f"logs/process{pid}{LOG_NAME}.txt", "w") as logFile:
@@ -80,13 +110,8 @@ def process_messages(pid: int, sleepDuration: float):
             # process messages from the message queue if they exist
             if messageQueue[pid]:
                 # set logical clock to the maximum of local clock and received message; log event
-                message = messageQueue[pid].pop(0)
-                # logical clock IR2, then IR1
-                clock = max(message, clock) + 1
+                clock = handle_message_receipt(messageQueue[pid], clock, logFile)
                 print(f"[{pid}] processed message, updated clock value to {clock}")
-                logFile.write(f"[MESSAGE RECEIVED] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Queue Length - {len(messageQueue[pid])} | Clock Time - {clock}\n")
-                # the operation was reading the message, time to sleep again after flushing
-                logFile.flush()
                 continue 
 
             # generate random number to decide what event will occur
@@ -94,13 +119,7 @@ def process_messages(pid: int, sleepDuration: float):
             print(f"[{pid}] generated number {num}")
 
             # send to first, second or both of the other processes depending on number generated
-            toSend = []
-            if num == 1:
-                toSend = [0]
-            elif num == 2:
-                toSend = [1]
-            elif num == 3:
-                toSend = [0, 1]
+            toSend = get_recipients(num)
             
             # send messages
             print(f"[{pid}] sending messages to {len(toSend)} other process(es)")
@@ -115,20 +134,13 @@ def process_messages(pid: int, sleepDuration: float):
                 for sock in sockets:
                     if sock:
                         sock.close()
-                os.kill(os.getppid(), signal.SIGKILL)
+                os._exit(1)
 
             # update logical clock (IR1)
             clock += 1
 
             # log message send event
-            if toSend:
-                logFile.write(f"[MESSAGE(S) SENT] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Receiver(s) - {[otherProcesses[rec] for rec in toSend]} | Clock Time - {clock}\n")
-            # log internal event
-            else:
-                logFile.write(f"[INTERNAL] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | No Messages Sent | Clock Time - {clock}\n")
-
-            # flush the log file to ensure that everything is written before the next clock cycle
-            logFile.flush()
+            log_message_send(toSend, otherProcesses, clock, logFile)
 
 
 def service_connection(pid: int, clientSocket):
@@ -152,7 +164,7 @@ def service_connection(pid: int, clientSocket):
         except Exception as e:
             print(f"[{pid}] there is an error communicating with a client - terminating process: {e}")
             clientSocket.close()
-            os.kill(os.getppid(), signal.SIGKILL)
+            os._exit(1)
 
         # add message to the process's message queue
         message = int.from_bytes(rec, "big")
@@ -187,11 +199,12 @@ def init_server(pid: int):
             # if the .accept() function throws an error this is irrecoverable; exit the process with status code 7
             except Exception as e:
                 print(f"[{pid}] error accepting connection - terminating process: {e}")
-                os.kill(os.getppid(), signal.SIGKILL)
+                os._exit(1)
             # start a new thread for each client connection
             listener = threading.Thread(target=service_connection, args=(pid, c,))
             listener.start()
             threads.append(listener)
+
 
 def init_process(pid: int):
     """
@@ -215,6 +228,7 @@ def init_process(pid: int):
     processor.start()
     threads.append(processor)
 
+
 if __name__ == "__main__":
     # optionally specify a suffix for the log file; the log name will be process<pid><LOG_NAME>.txt
     if len(sys.argv) >= 2:
@@ -235,7 +249,7 @@ if __name__ == "__main__":
         for process in processes:
             process.join()
     
-    # catch interrupts; we do not currently close file descriptors 
+    # catch interrupts
     except KeyboardInterrupt:
         print("\nExiting...")
         os._exit(0)

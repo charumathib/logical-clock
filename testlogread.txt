@@ -1,0 +1,5 @@
+ticks per second: 5.0
+[MESSAGE(S) SENT] | Global Time - 00:00:34.000000 | Receiver(s) - [1] | Clock Time - 2
+[INTERNAL] | Global Time - 00:00:34.400000 | No Messages Sent | Clock Time - 4
+[MESSAGE(S) SENT] | Global Time - 00:00:35.200000 | Receiver(s) - [1] | Clock Time - 8
+[MESSAGE RECEIVED] | Global Time - 00:00:35.800000 | Queue Length - 0 | Clock Time - 11
