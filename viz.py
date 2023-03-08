@@ -90,7 +90,7 @@ if __name__ == "__main__":
         xs = [x[0] for x in process_clock_updates]
         ys = [x[1] for x in process_clock_updates]
         plt.plot(xs, ys, label=f"Machine {i}, {ticks[i]} ticks/s")
-    plt.legend()
+    plt.legend(loc=2)
     plt.xlabel("Global Time (s)")
     plt.ylabel("Logical Clock Value")
     plt.title("Machine Logical Clock Values")
@@ -103,7 +103,7 @@ if __name__ == "__main__":
         xs = [x[0] for x in queue_lengths]
         ys = [x[1] for x in queue_lengths]
         plt.step(xs, ys, label=f"Machine {i}, {ticks[i]} ticks/s")
-    plt.legend()
+    plt.legend(loc=2)
     plt.xlabel("Global Time (s)")
     plt.ylabel("Queue Length")
     plt.title("Machine Message Queue Lengths")

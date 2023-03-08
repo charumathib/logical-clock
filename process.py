@@ -14,6 +14,12 @@ N_PROCESS = 3
 MESSAGE_SIZE = 4
 LOG_NAME = "LOG"
 
+# change these constants to try different variants, e.g. differences in internal tick rates/probability of internal events
+TICK_RANGE = [1, 6]
+FIXED_TICKS = True
+TICKS = [1, 5, 6]
+INTERNAL_EVENT_CAP = 25
+
 # ports for each process' server
 ports = {0: 21522, 1: 21523, 2: 21524}
 
@@ -77,14 +83,14 @@ def process_messages(pid: int, sleepDuration: float):
                 message = messageQueue[pid].pop(0)
                 # logical clock IR2, then IR1
                 clock = max(message, clock) + 1
-                print(f"[{pid}] received message, updated clock value to {clock}")
+                print(f"[{pid}] processed message, updated clock value to {clock}")
                 logFile.write(f"[MESSAGE RECEIVED] | Global Time - {datetime.now().strftime('%H:%M:%S.%f')} | Queue Length - {len(messageQueue[pid])} | Clock Time - {clock}\n")
                 # the operation was reading the message, time to sleep again after flushing
                 logFile.flush()
                 continue 
 
             # generate random number to decide what event will occur
-            num = randint(1, 10)
+            num = randint(1, INTERNAL_EVENT_CAP)
             print(f"[{pid}] generated number {num}")
 
             # send to first, second or both of the other processes depending on number generated
@@ -202,7 +208,9 @@ def init_process(pid: int):
     threads.append(server)
 
     # randomly generate clock speed for process in terms of number of ticks per second
-    clockTicks = randint(1, 6)
+    clockTicks = randint(TICK_RANGE[0], TICK_RANGE[1])
+    if FIXED_TICKS:
+        clockTicks = TICKS[pid]
     processor = threading.Thread(target=process_messages, args=(pid, 1/clockTicks))
     processor.start()
     threads.append(processor)
