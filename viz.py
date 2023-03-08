@@ -89,7 +89,7 @@ if __name__ == "__main__":
         process_clock_updates = get_clock_updates(process_filenames[i], st)
         xs = [x[0] for x in process_clock_updates]
         ys = [x[1] for x in process_clock_updates]
-        plt.plot(xs, ys, label=f"Machine {i}, {ticks[i]} ticks/s")
+        plt.step(xs, ys, label=f"Machine {i}, {ticks[i]} ticks/s")
     plt.legend(loc=2)
     plt.xlabel("Global Time (s)")
     plt.ylabel("Logical Clock Value")
