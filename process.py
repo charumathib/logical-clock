@@ -1,4 +1,5 @@
 import signal
+import sys
 import os
 import socket
 import threading
@@ -8,8 +9,10 @@ from random import randint
 from multiprocessing import Process 
 
 # Constants
+# we run 3 processes with pids 0, 1, 2, which will also be used as indexes
 N_PROCESS = 3
 MESSAGE_SIZE = 4
+LOG_NAME = "LOG"
 
 # ports for each process' server
 ports = {0: 21522, 1: 21523, 2: 21524}
@@ -37,14 +40,15 @@ def process_messages(pid: int, sleepDuration: float):
     time.sleep(5)
 
     # open log file (overwriting if one already exists)
-    logFile = open(f"process{pid}LOG.txt", "w")
+    logFile = open(f"logs/process{pid}{LOG_NAME}.txt", "w")
+    logFile.write(f"ticks per second: {1/sleepDuration}\n")
 
     # get pid of the other two processes
     otherProcesses = list({0, 1, 2} - {pid})
     otherProcesses.sort()
     print(f"[{pid}] communicating with {otherProcesses}")
 
-    # maintain reference to servers for other two processes
+    # maintain reference to servers for other two processes, indexed via their pid
     sockets = [None, None, None]
 
     # attempt to connect to other two processes
@@ -57,8 +61,8 @@ def process_messages(pid: int, sleepDuration: float):
                 connected = True
                 print(f"[{pid}] connected to {process}")
             # if unable to connect, just try again
-            except:
-                print(f"[{pid}] can't connect to {process} - sleeping")
+            except Exception as e:
+                print(f"[{pid}] can't connect to {process} - sleeping: {e}")
                 time.sleep(1)
 
     while True:
@@ -71,7 +75,7 @@ def process_messages(pid: int, sleepDuration: float):
             # set logical clock to the maximum of local clock and received message; log event
             message = messageQueue[pid].pop(0)
             clock = max(message, clock) + 1
-            logFile.write(f"[MESSAGE RECEIVED] Time: {datetime.now().strftime('%H:%M:%S')} Queue Length: {len(messageQueue)} Clock Time: {clock}\n")
+            logFile.write(f"[MESSAGE RECEIVED] Time: {datetime.now().strftime('%H:%M:%S.%f')} Queue Length: {len(messageQueue[pid])} Clock Time: {clock}\n")
         else:
             # generate random number to decide what event will occur
             num = randint(1, 10)
@@ -107,10 +111,10 @@ def process_messages(pid: int, sleepDuration: float):
 
             # log message send event
             for rec in toSend:
-                logFile.write(f"[MESSAGE SENT] Time: {datetime.now().strftime('%H:%M:%S')} Receiver: {otherProcesses[rec]} Clock Time: {clock}\n")
+                logFile.write(f"[MESSAGE SENT] Time: {datetime.now().strftime('%H:%M:%S.%f')} Receiver: {otherProcesses[rec]} Clock Time: {clock}\n")
             # log internal event
             if not toSend:
-                logFile.write(f"[INTERNAL] Time: {datetime.now().strftime('%H:%M:%S')} Receiver: {pid} Clock Time: {clock}\n")
+                logFile.write(f"[INTERNAL] Time: {datetime.now().strftime('%H:%M:%S.%f')} Receiver: {pid} Clock Time: {clock}\n")
 
         # flush the log file to ensure that everything is written before the next clock cycle
         logFile.flush()
@@ -198,16 +202,28 @@ def init_process(pid: int):
     threads.append(processor)
 
 if __name__ == "__main__":
-    processes = []
+    if len(sys.argv) >= 2:
+        LOG_NAME = str(sys.argv[1])
+    
+    try:
+        processes = []
 
-    for i in range(N_PROCESS):
-        # we give the three processes being run pids of 0, 1 and 2
-        processes.append(Process(target=init_process, args=(i,)))
+        for i in range(N_PROCESS):
+            # we give the three processes being run pids of 0, 1 and 2
+            processes.append(Process(target=init_process, args=(i,)))
+        
+        # start all processes
+        for process in processes:
+            process.start()
+        
+        # join all processes
+        for process in processes:
+            process.join()
     
-    # start all processes
-    for process in processes:
-        process.start()
-    
-    # join all processes
-    for process in processes:
-        process.join()
+    except KeyboardInterrupt:
+        print("\nExiting...")
+        os._exit(0)
+        
+    except:
+        print("\nUnexpected error...")
+        os._exit(1)

@@ -1,0 +1,104 @@
+ticks per second: 1.0[MESSAGE RECEIVED] Time: 23:39:03.090609 Queue Length: 0 Clock Time: 2
+[INTERNAL] Time: 23:39:04 Receiver: 1 Clock Time: 3
+[MESSAGE RECEIVED] Time: 23:39:05.100496 Queue Length: 0 Clock Time: 7
+[MESSAGE RECEIVED] Time: 23:39:06.106345 Queue Length: 1 Clock Time: 11
+[MESSAGE RECEIVED] Time: 23:39:07.111077 Queue Length: 2 Clock Time: 12
+[MESSAGE RECEIVED] Time: 23:39:08.117735 Queue Length: 2 Clock Time: 14
+[MESSAGE RECEIVED] Time: 23:39:09.124308 Queue Length: 1 Clock Time: 15
+[MESSAGE RECEIVED] Time: 23:39:10.130885 Queue Length: 2 Clock Time: 18
+[MESSAGE RECEIVED] Time: 23:39:11.137975 Queue Length: 2 Clock Time: 19
+[MESSAGE RECEIVED] Time: 23:39:12.142068 Queue Length: 3 Clock Time: 24
+[MESSAGE RECEIVED] Time: 23:39:13.147878 Queue Length: 3 Clock Time: 25
+[MESSAGE RECEIVED] Time: 23:39:14.152761 Queue Length: 2 Clock Time: 26
+[MESSAGE RECEIVED] Time: 23:39:15.157202 Queue Length: 2 Clock Time: 30
+[MESSAGE RECEIVED] Time: 23:39:16.160285 Queue Length: 2 Clock Time: 33
+[MESSAGE RECEIVED] Time: 23:39:17.166535 Queue Length: 2 Clock Time: 39
+[MESSAGE RECEIVED] Time: 23:39:18.170030 Queue Length: 3 Clock Time: 40
+[MESSAGE RECEIVED] Time: 23:39:19.174997 Queue Length: 3 Clock Time: 45
+[MESSAGE RECEIVED] Time: 23:39:20.180594 Queue Length: 3 Clock Time: 46
+[MESSAGE RECEIVED] Time: 23:39:21.184750 Queue Length: 3 Clock Time: 47
+[MESSAGE RECEIVED] Time: 23:39:22.188562 Queue Length: 4 Clock Time: 48
+[MESSAGE RECEIVED] Time: 23:39:23.192516 Queue Length: 4 Clock Time: 53
+[MESSAGE RECEIVED] Time: 23:39:24.196339 Queue Length: 3 Clock Time: 55
+[MESSAGE RECEIVED] Time: 23:39:25.201043 Queue Length: 3 Clock Time: 58
+[MESSAGE RECEIVED] Time: 23:39:26.206763 Queue Length: 3 Clock Time: 59
+[MESSAGE RECEIVED] Time: 23:39:27.209986 Queue Length: 6 Clock Time: 63
+[MESSAGE RECEIVED] Time: 23:39:28.214400 Queue Length: 6 Clock Time: 67
+[MESSAGE RECEIVED] Time: 23:39:29.220642 Queue Length: 6 Clock Time: 72
+[MESSAGE RECEIVED] Time: 23:39:30.224784 Queue Length: 8 Clock Time: 73
+[MESSAGE RECEIVED] Time: 23:39:31.229807 Queue Length: 7 Clock Time: 74
+[MESSAGE RECEIVED] Time: 23:39:32.232052 Queue Length: 7 Clock Time: 75
+[MESSAGE RECEIVED] Time: 23:39:33.234156 Queue Length: 6 Clock Time: 76
+[MESSAGE RECEIVED] Time: 23:39:34.238898 Queue Length: 6 Clock Time: 77
+[MESSAGE RECEIVED] Time: 23:39:35.244584 Queue Length: 5 Clock Time: 78
+[MESSAGE RECEIVED] Time: 23:39:36.250447 Queue Length: 4 Clock Time: 82
+[MESSAGE RECEIVED] Time: 23:39:37.256258 Queue Length: 3 Clock Time: 83
+[MESSAGE RECEIVED] Time: 23:39:38.261507 Queue Length: 4 Clock Time: 84
+[MESSAGE RECEIVED] Time: 23:39:39.264995 Queue Length: 3 Clock Time: 86
+[MESSAGE RECEIVED] Time: 23:39:40.268764 Queue Length: 5 Clock Time: 95
+[MESSAGE RECEIVED] Time: 23:39:41.274947 Queue Length: 4 Clock Time: 104
+[MESSAGE RECEIVED] Time: 23:39:42.279945 Queue Length: 4 Clock Time: 105
+[MESSAGE RECEIVED] Time: 23:39:43.285540 Queue Length: 5 Clock Time: 109
+[MESSAGE RECEIVED] Time: 23:39:44.291048 Queue Length: 5 Clock Time: 112
+[MESSAGE RECEIVED] Time: 23:39:45.296864 Queue Length: 4 Clock Time: 113
+[MESSAGE RECEIVED] Time: 23:39:46.300257 Queue Length: 5 Clock Time: 118
+[MESSAGE RECEIVED] Time: 23:39:47.304084 Queue Length: 5 Clock Time: 121
+[MESSAGE RECEIVED] Time: 23:39:48.306433 Queue Length: 6 Clock Time: 122
+[MESSAGE RECEIVED] Time: 23:39:49.310297 Queue Length: 6 Clock Time: 123
+[MESSAGE RECEIVED] Time: 23:39:50.313787 Queue Length: 6 Clock Time: 130
+[MESSAGE RECEIVED] Time: 23:39:51.317540 Queue Length: 6 Clock Time: 131
+[MESSAGE RECEIVED] Time: 23:39:52.320403 Queue Length: 7 Clock Time: 134
+[MESSAGE RECEIVED] Time: 23:39:53.324665 Queue Length: 6 Clock Time: 136
+[MESSAGE RECEIVED] Time: 23:39:54.328321 Queue Length: 5 Clock Time: 137
+[MESSAGE RECEIVED] Time: 23:39:55.333422 Queue Length: 4 Clock Time: 138
+[MESSAGE RECEIVED] Time: 23:39:56.337058 Queue Length: 3 Clock Time: 141
+[MESSAGE RECEIVED] Time: 23:39:57.342918 Queue Length: 3 Clock Time: 142
+[MESSAGE RECEIVED] Time: 23:39:58.346563 Queue Length: 3 Clock Time: 143
+[MESSAGE RECEIVED] Time: 23:39:59.351570 Queue Length: 4 Clock Time: 149
+[MESSAGE RECEIVED] Time: 23:40:00.356885 Queue Length: 4 Clock Time: 162
+[MESSAGE RECEIVED] Time: 23:40:01.360771 Queue Length: 5 Clock Time: 166
+[MESSAGE RECEIVED] Time: 23:40:02.364500 Queue Length: 5 Clock Time: 167
+[MESSAGE RECEIVED] Time: 23:40:03.367932 Queue Length: 4 Clock Time: 169
+[MESSAGE RECEIVED] Time: 23:40:04.372288 Queue Length: 4 Clock Time: 171
+[MESSAGE RECEIVED] Time: 23:40:05.377397 Queue Length: 3 Clock Time: 172
+[MESSAGE RECEIVED] Time: 23:40:06.381562 Queue Length: 3 Clock Time: 175
+[MESSAGE RECEIVED] Time: 23:40:07.386541 Queue Length: 2 Clock Time: 177
+[MESSAGE RECEIVED] Time: 23:40:08.391544 Queue Length: 3 Clock Time: 181
+[MESSAGE RECEIVED] Time: 23:40:09.394880 Queue Length: 3 Clock Time: 186
+[MESSAGE RECEIVED] Time: 23:40:10.399165 Queue Length: 3 Clock Time: 189
+[MESSAGE RECEIVED] Time: 23:40:11.403996 Queue Length: 3 Clock Time: 195
+[MESSAGE RECEIVED] Time: 23:40:12.409570 Queue Length: 3 Clock Time: 198
+[MESSAGE RECEIVED] Time: 23:40:13.414397 Queue Length: 2 Clock Time: 199
+[MESSAGE RECEIVED] Time: 23:40:14.420246 Queue Length: 1 Clock Time: 205
+[MESSAGE RECEIVED] Time: 23:40:15.425246 Queue Length: 2 Clock Time: 206
+[MESSAGE RECEIVED] Time: 23:40:16.430278 Queue Length: 1 Clock Time: 214
+[MESSAGE RECEIVED] Time: 23:40:17.433326 Queue Length: 2 Clock Time: 217
+[MESSAGE RECEIVED] Time: 23:40:18.435890 Queue Length: 1 Clock Time: 221
+[MESSAGE RECEIVED] Time: 23:40:19.441157 Queue Length: 0 Clock Time: 222
+[MESSAGE RECEIVED] Time: 23:40:20.447601 Queue Length: 1 Clock Time: 230
+[MESSAGE RECEIVED] Time: 23:40:21.451442 Queue Length: 1 Clock Time: 231
+[MESSAGE RECEIVED] Time: 23:40:22.456523 Queue Length: 1 Clock Time: 233
+[MESSAGE RECEIVED] Time: 23:40:23.461425 Queue Length: 1 Clock Time: 237
+[MESSAGE RECEIVED] Time: 23:40:24.462839 Queue Length: 3 Clock Time: 239
+[MESSAGE RECEIVED] Time: 23:40:25.468055 Queue Length: 2 Clock Time: 242
+[MESSAGE RECEIVED] Time: 23:40:26.470059 Queue Length: 1 Clock Time: 243
+[MESSAGE RECEIVED] Time: 23:40:27.476936 Queue Length: 0 Clock Time: 244
+[MESSAGE SENT] Time: 23:40:28 Receiver: 0 Clock Time: 245
+[MESSAGE SENT] Time: 23:40:28 Receiver: 2 Clock Time: 245
+[INTERNAL] Time: 23:40:29 Receiver: 1 Clock Time: 246
+[MESSAGE SENT] Time: 23:40:30 Receiver: 0 Clock Time: 247
+[MESSAGE SENT] Time: 23:40:30 Receiver: 2 Clock Time: 247
+[MESSAGE RECEIVED] Time: 23:40:31.493530 Queue Length: 0 Clock Time: 264
+[MESSAGE RECEIVED] Time: 23:40:32.498065 Queue Length: 0 Clock Time: 267
+[MESSAGE RECEIVED] Time: 23:40:33.502607 Queue Length: 1 Clock Time: 268
+[MESSAGE RECEIVED] Time: 23:40:34.509256 Queue Length: 0 Clock Time: 269
+[INTERNAL] Time: 23:40:35 Receiver: 1 Clock Time: 270
+[MESSAGE RECEIVED] Time: 23:40:36.517168 Queue Length: 0 Clock Time: 280
+[MESSAGE RECEIVED] Time: 23:40:37.523768 Queue Length: 1 Clock Time: 281
+[MESSAGE RECEIVED] Time: 23:40:38.525614 Queue Length: 2 Clock Time: 282
+[MESSAGE RECEIVED] Time: 23:40:39.531039 Queue Length: 1 Clock Time: 284
+[MESSAGE RECEIVED] Time: 23:40:40.535725 Queue Length: 2 Clock Time: 285
+[MESSAGE RECEIVED] Time: 23:40:41.541149 Queue Length: 1 Clock Time: 290
+[MESSAGE RECEIVED] Time: 23:40:42.547142 Queue Length: 1 Clock Time: 291
+[MESSAGE RECEIVED] Time: 23:40:43.549279 Queue Length: 0 Clock Time: 295
+[INTERNAL] Time: 23:40:44 Receiver: 1 Clock Time: 296
